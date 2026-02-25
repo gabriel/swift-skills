@@ -50,7 +50,8 @@ export default defineConfig({
           { text: 'Overview', link: '/dependencies/' },
           { text: 'Dependencies (Point-Free)', link: '/dependencies/dependencies' },
           { text: 'Dependencies (Micro App)', link: '/dependencies/micro' },
-          { text: 'FactoryKit', link: '/dependencies/factory' }
+          { text: 'FactoryKit', link: '/dependencies/factory' },
+          { text: 'Swift Service', link: '/dependencies/swift-service' }
         ]
       },
       {

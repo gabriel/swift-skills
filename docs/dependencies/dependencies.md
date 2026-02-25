@@ -8,7 +8,23 @@ How it Works: You define a DependencyKey that specifies a liveValue for your app
 
 ## Basic Usage
 
-### 1. Define Dependencies
+### 1. Installation
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/pointfreeco/swift-dependencies", .upToNextMajor(from: "1.0.0"))
+],
+targets: [
+    .target(
+        name: "MyFeature",
+        dependencies: [
+            .product(name: "Dependencies", package: "swift-dependencies")
+        ]
+    )
+]
+```
+
+### 2. Define Dependencies
 
 ```swift
 import Dependencies
@@ -50,7 +66,7 @@ struct TestNetworkClient: NetworkClient {
 }
 ```
 
-### 2. Use in SwiftUI Views
+### 3. Use in SwiftUI Views
 
 ```swift
 import SwiftUI

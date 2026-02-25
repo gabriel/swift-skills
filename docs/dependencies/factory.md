@@ -8,7 +8,23 @@ How it Works: You register your dependencies within an extension on a Container 
 
 ## Basic Usage
 
-### 1. Define Your Services
+### 1. Installation
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/hmlongco/Factory", .upToNextMajor(from: "2.0.0"))
+],
+targets: [
+    .target(
+        name: "MyFeature",
+        dependencies: [
+            .product(name: "FactoryKit", package: "Factory")
+        ]
+    )
+]
+```
+
+### 2. Define Your Services
 
 ```swift
 // Protocol defining the service interface
@@ -36,7 +52,7 @@ class AnalyticsService: AnalyticsServiceProtocol {
 }
 ```
 
-### 2. Register Dependencies
+### 3. Register Dependencies
 
 ```swift
 import FactoryKit
@@ -61,7 +77,7 @@ extension Container {
 }
 ```
 
-### 3. Use in SwiftUI Views
+### 4. Use in SwiftUI Views
 
 ```swift
 struct ContentView: View {

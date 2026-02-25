@@ -22,6 +22,7 @@ Browse the published docs at [gabriel.github.io/swiftui-patterns](https://gabrie
 - [Dependencies (PointFree)](./docs/dependencies/dependencies.md)
 - [FactoryKit](./docs/dependencies/factory.md)
 - [Dependencies (Micro App)](./docs/dependencies/micro.md)
+- [Swift Service](./docs/dependencies/swift-service.md)
 
 ### [Testing](./docs/testing/index.md)
 

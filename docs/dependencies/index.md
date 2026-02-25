@@ -7,3 +7,4 @@ Techniques and helpers for composing dependencies across modules, features, and 
 - [Dependencies (Point-Free)](./dependencies.md)
 - [Dependencies (Micro App)](./micro.md)
 - [FactoryKit](./factory.md)
+- [Swift Service](./swift-service.md)

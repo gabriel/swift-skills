@@ -11,7 +11,11 @@ The dependency injection pattern involves:
 3. **Creating mock implementations** for testing and previews
 4. **Centralizing dependency management** in an app container
 
-### 1. Define Dependencies
+### 1. Installation
+
+No third-party package is required. This architecture relies on Swift language features and app-level composition.
+
+### 2. Define Dependencies
 
 ```swift
 @MainActor
@@ -66,7 +70,7 @@ public final class SearchViewModel {
 }
 ```
 
-### 2. SwiftUI View
+### 3. SwiftUI View
 
 ```swift
 public struct SearchView: View {
@@ -112,7 +116,7 @@ public struct SearchView: View {
 }
 ```
 
-### 3. Mock Dependencies for Testing
+### 4. Mock Dependencies for Testing
 
 ```swift
 extension SearchViewModel.Dependencies {
@@ -144,7 +148,7 @@ extension SearchViewModel.Dependencies {
 }
 ```
 
-### 4. Modern Preview Macro
+### 5. Modern Preview Macro
 
 ```swift
 #Preview("Search View") {
