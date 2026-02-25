@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   title: 'SwiftUI Patterns',
-  description: 'A collection of SwiftUI patterns, best practices, and architectural approaches for building modern iOS applications.',
+  description: 'A collection of SwiftUI patterns, UI components, best practices, and architectural approaches for building modern iOS applications.',
   base: '/swiftui-patterns/',
   cleanUrls: true,
   lastUpdated: true,

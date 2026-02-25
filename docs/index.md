@@ -3,7 +3,7 @@ layout: home
 hero:
   name: SwiftUI Patterns
   text: 
-  tagline: A collection of SwiftUI patterns, best practices, and architectural approaches for building modern iOS applications.
+  tagline: A collection of SwiftUI patterns, UI components, best practices, and architectural approaches for building modern iOS applications.
   image:
     src: /logo.svg
     alt: SwiftUI Patterns logo
@@ -15,4 +15,3 @@ hero:
       text: View on GitHub
       link: https://github.com/gabriel/swiftui-patterns
 ---
-

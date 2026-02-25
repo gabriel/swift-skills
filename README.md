@@ -1,6 +1,6 @@
 # SwiftUI Patterns
 
-A collection of SwiftUI patterns, best practices, and architectural approaches for building modern iOS applications.
+A collection of SwiftUI patterns, UI components, best practices, and architectural approaches for building modern iOS applications.
 
 ## 🌐 Live Site
 
