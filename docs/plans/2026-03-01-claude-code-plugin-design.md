@@ -23,10 +23,10 @@ Each skill has a lean SKILL.md (~50-100 lines) with frontmatter triggers and a d
 - **SKILL.md:** When to use SwiftUI Routes, basic setup pattern, URL vs Type routing decision
 - **references/swiftui-routes.md** — Full SwiftUI Routes documentation (dual routing, multi-package registration, push/pop API)
 
-#### 2. `skills/swiftui-ui/`
+#### 2. `skills/swiftui-components/`
 
-- **Triggers:** ScrollView geometry, viewport sizing, lazy stacks, carousel sizing, lorem ipsum, preview text, deterministic text, HipsterLorem, ScrollViewport
-- **SKILL.md:** Quick guide to ScrollViewport and HipsterLorem with when-to-use guidance
+- **Triggers:** Custom SwiftUI view, view modifier, SwiftUI component, ScrollView geometry, viewport sizing, lazy stacks, carousel sizing, lorem ipsum, preview text, deterministic text, HipsterLorem, ScrollViewport
+- **SKILL.md:** Drop-in custom views and view modifiers — ScrollViewport and HipsterLorem with when-to-use guidance
 - **references/scroll-viewport.md** — ScrollViewport documentation (environment injection, viewport depth, GeometryReader workaround)
 - **references/hipster-lorem.md** — HipsterLorem documentation (seeded RNG, API table, preview/snapshot usage)
 
@@ -56,7 +56,7 @@ swiftui-patterns/
 │   │   ├── SKILL.md
 │   │   └── references/
 │   │       └── swiftui-routes.md
-│   ├── swiftui-ui/
+│   ├── swiftui-components/
 │   │   ├── SKILL.md
 │   │   └── references/
 │   │       ├── scroll-viewport.md
