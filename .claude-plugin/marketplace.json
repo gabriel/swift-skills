@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "swift-skills",
-      "source": ".",
+      "source": "./",
       "description": "SwiftUI patterns and best practices for navigation, UI components, dependency injection, and snapshot testing."
     }
   ]
