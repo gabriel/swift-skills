@@ -1,0 +1,11 @@
+{
+  "name": "swiftui-patterns",
+  "description": "SwiftUI patterns and best practices for navigation, UI components, dependency injection, and snapshot testing. Provides actionable guidance when building SwiftUI apps.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gabriel"
+  },
+  "repository": "https://github.com/gabriel/swiftui-patterns",
+  "license": "MIT",
+  "keywords": ["swiftui", "ios", "navigation", "dependency-injection", "snapshot-testing", "swift"]
+}
