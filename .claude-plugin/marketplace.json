@@ -1,0 +1,13 @@
+{
+  "name": "swift-skills",
+  "owner": {
+    "name": "Gabriel"
+  },
+  "plugins": [
+    {
+      "name": "swiftui-patterns",
+      "source": ".",
+      "description": "SwiftUI patterns and best practices for navigation, UI components, dependency injection, and snapshot testing."
+    }
+  ]
+}

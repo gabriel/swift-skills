@@ -5,7 +5,7 @@
   "author": {
     "name": "Gabriel"
   },
-  "repository": "https://github.com/gabriel/swiftui-patterns",
+  "repository": "https://github.com/gabriel/swift-skills",
   "license": "MIT",
   "keywords": ["swiftui", "ios", "navigation", "dependency-injection", "snapshot-testing", "swift"]
 }

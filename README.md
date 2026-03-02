@@ -4,8 +4,9 @@ A Claude Code plugin that provides SwiftUI skills for navigation, components, de
 
 ## Install
 
-```bash
-claude plugins install github:gabriel/swift-skills
+```shell
+/plugin marketplace add gabriel/swift-skills
+/plugin install swiftui-patterns@swift-skills
 ```
 
 ## Skills
