@@ -1,46 +1,47 @@
-# SwiftUI Patterns
+# Swift Skills
 
-A collection of SwiftUI patterns, UI components, best practices, and architectural approaches for building modern iOS applications.
+A Claude Code plugin that provides SwiftUI skills for navigation, components, dependency injection, and snapshot testing. Install the plugin and Claude gets actionable guidance with code examples when building SwiftUI apps.
 
-## 🌐 Live Site
+## Install
 
-Browse the published docs at [gabriel.github.io/swiftui-patterns](https://gabriel.github.io/swiftui-patterns/).
+```bash
+claude plugins install github:gabriel/swift-skills
+```
 
-## 🔧 Pattern Categories
+## Skills
 
-### [Navigation & Routing](./docs/navigation/index.md)
+### [swiftui-navigation](./skills/swiftui-navigation/SKILL.md)
 
-- [SwiftUI Routes](./docs/navigation/swiftui-routes.md)
+Navigation and routing patterns using SwiftUI Routes — dual routing (URL-based deep linking + type-safe navigation), multi-package route registration, push/pop API.
 
-### [UI](./docs/ui/index.md)
+### [swiftui-components](./skills/swiftui-components/SKILL.md)
 
-- [ScrollViewport](./docs/ui/ScrollViewport.md)
-- [HipsterLorem](./docs/ui/HipsterLorem.md)
+Drop-in custom views and view modifiers:
 
-### [Dependencies & Injection](./docs/dependencies/index.md)
+- **ScrollViewport** — Captures viewport geometry before ScrollView takes control, so descendants can size relative to the container
+- **HipsterLorem** — Deterministic lorem ipsum generator with seeded RNG for stable previews and snapshot tests
 
-- [Dependencies (PointFree)](./docs/dependencies/dependencies.md)
-- [FactoryKit](./docs/dependencies/factory.md)
-- [Dependencies (Micro App)](./docs/dependencies/micro.md)
-- [Swift Service](./docs/dependencies/swift-service.md)
+### [swiftui-dependencies](./skills/swiftui-dependencies/SKILL.md)
 
-### [Testing](./docs/testing/index.md)
+Dependency injection patterns with a decision matrix for choosing between four approaches:
 
-- [SwiftUI Snapshots](./docs/testing/swiftui-snapshots.md)
+- **Point-Free** (swift-dependencies) — Type-safe DI with `@Dependency` and `withDependencies` testing
+- **FactoryKit** — Container-based DI with scopes, contexts, and `@Injected`
+- **Microapps** — Zero-dependency struct-based injection with function types
+- **Swift Service** — Concurrency-first DI with compiler-enforced Sendable/MainActor boundaries
 
-## 🤝 Contributing
+### [swiftui-testing](./skills/swiftui-testing/SKILL.md)
 
-Found a useful pattern? Want to improve existing documentation? Contributions are welcome!
+SwiftUI snapshot testing with `assertRender` (pure SwiftUI, fast) and `assertSnapshot` (UIKit-hosted, accurate), device simulation, and async test patterns.
 
-1. Fork the repository
-2. Create a new branch
-3. Add your pattern or improvements
-4. Submit a pull request
+## Swift Library
 
-## 📄 License
+This repo also ships a Swift package (`SwiftUIPatterns`) with the ScrollViewport and HipsterLorem components:
 
-This documentation is open source and available under the [MIT License](LICENSE).
+```swift
+.package(url: "https://github.com/gabriel/swift-skills", from: "1.0.0")
+```
 
----
+## License
 
-*Built with ❤️ for the SwiftUI community*
+MIT
