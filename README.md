@@ -6,7 +6,7 @@ A Claude Code plugin that provides SwiftUI skills for navigation, components, de
 
 ```shell
 /plugin marketplace add gabriel/swift-skills
-/plugin install swiftui-patterns@swift-skills
+/plugin install swift-skills@swift-skills
 ```
 
 ## Skills
